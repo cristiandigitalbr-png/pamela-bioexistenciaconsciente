@@ -15,6 +15,9 @@
   --bg:#fbfcfc;
   --white:#ffffff;
   --mist:#f1f6f6;
+  --sand:#f7f1e8;
+  --sand-deep:#ebdfcd;
+  --taupe:#a8896a;
   --aqua-soft:#e4f3f2;
   --aqua-line:#c4e4e2;
   --aqua:#a9dbd8;
@@ -133,6 +136,32 @@ footer img{width:46px;margin:0 auto 12px}
 .credit{margin-top:6px;font-size:.8rem}
 .credit a{color:var(--teal-deep)}
 
+/* ===== BEIGE + CONTRASTE ===== */
+#sobre-mi{background:var(--sand)}
+#sobre-mi .photo::before{border-color:var(--sand-deep);background:radial-gradient(circle,#efe4d3 60%,rgba(239,228,211,0) 72%)}
+#sobre-mi .tag{color:var(--taupe)}
+#sobre-mi .hp{border-color:var(--sand-deep)}
+#propuestas{background:var(--white)}
+#propuestas .prop{background:linear-gradient(180deg,var(--white) 0%,var(--mist) 100%)}
+#propuestas .prop:nth-child(2){background:linear-gradient(180deg,var(--white) 0%,var(--sand) 100%);border-color:var(--sand-deep)}
+#propuestas .prop:nth-child(2) .ic{background:var(--sand);color:var(--taupe)}
+#propuestas .prop:nth-child(2) .tag,#propuestas .prop:nth-child(2) .cred{color:var(--taupe)}
+#propuestas .prop:nth-child(2) .cred{border-top-color:var(--sand-deep)}
+#pasos{background:linear-gradient(135deg,#1e6f71 0%,#2a8b8c 100%);color:#e6f4f3;position:relative;overflow:hidden}
+#pasos::after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;border:1px solid rgba(255,255,255,.08);right:-160px;top:-200px;pointer-events:none}
+#pasos .tag{color:var(--sand-deep)}
+#pasos h2{color:#fff}
+#pasos h2 em{color:var(--sand-deep)}
+#pasos .step{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.16);backdrop-filter:blur(2px)}
+#pasos .step .n{color:var(--sand-deep)}
+#pasos .step h3{color:#fff}
+#pasos .step p{color:rgba(230,244,243,.82)}
+#contacto{padding-top:96px}
+.contact{background:linear-gradient(135deg,var(--sand) 0%,var(--aqua-soft) 100%);border-color:var(--sand-deep)}
+footer{background:var(--sand);border-top-color:var(--sand-deep)}
+footer .f-copy{border-top-color:var(--sand-deep)}
+@media(max-width:760px){#contacto{padding-top:72px}}
+
 .rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
 .rv.in{opacity:1;transform:none}
 
@@ -249,7 +278,7 @@ footer img{width:46px;margin:0 auto 12px}
     <div class="contact rv">
       <div>
         <span class="tag">Contacto</span>
-        <h2>Estoy para <em>acompañarte</em></h2>
+        <h2>Estoy para <em>escucharte</em></h2>
         <p>Si sentís que es momento de mirar tu vida desde otro lugar, escribime y conversamos. Te respondo personalmente.</p>
         <a href="https://wa.me/5492494339455?text=Hola%20Pamela%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20consultas." target="_blank" rel="noopener" class="btn btn-primary"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 004.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm5.8 14.13c-.24.68-1.42 1.3-1.95 1.35-.5.05-.97.23-3.27-.68-2.77-1.09-4.52-3.92-4.66-4.1-.13-.18-1.11-1.48-1.11-2.82s.7-2 .95-2.27c.24-.27.53-.34.71-.34l.51.01c.16.01.38-.06.6.46.24.55.79 1.9.86 2.04.07.14.11.3.02.48-.09.18-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.2 1.36.27.14.43.11.59-.07.16-.18.68-.8.86-1.07.18-.27.36-.23.61-.14.25.09 1.58.75 1.85.88.27.14.45.2.52.32.07.11.07.66-.17 1.34z"/></svg> Agenda tu consulta</a>
       </div>
